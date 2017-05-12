@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -23,7 +24,7 @@ public class Registro {
     @Column(name = "id")
     private long idRegistro;	
 
-	@NotBlank(message="Por favor introduzca su nombre.")
+	@NotBlank(message="{validacion.nombre.vacio}")
 	@Column(name = "nombre")
 	private String nombre;
 	
@@ -33,9 +34,10 @@ public class Registro {
 	
 	@NotNull(message="Por favor introduzca su fecha de nacimiento.")
 	@Column(name = "fechaNacimiento")
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date fechaNacimiento;
 	
-	@NotBlank
+	@NotBlank(message="Por favor introduzca su email.")
 	@Email
 	@Column(name = "email")
 	private String email;

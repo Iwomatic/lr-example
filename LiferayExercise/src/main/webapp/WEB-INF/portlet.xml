@@ -22,7 +22,7 @@
 			<mime-type>text/html</mime-type>
 			<portlet-mode>view</portlet-mode>
 		</supports>
-<!-- 		<resource-bundle>literales</resource-bundle> -->
+ 		<resource-bundle>content/literales</resource-bundle>
 		<portlet-info>
 			<title>Liferay Exercise</title>
 			<short-title>Liferay Exercises</short-title>

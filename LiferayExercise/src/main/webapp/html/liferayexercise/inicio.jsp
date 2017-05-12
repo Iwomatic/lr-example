@@ -1,14 +1,15 @@
 <%@ taglib uri="http://java.sun.com/portlet_2_0" prefix="portlet" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="liferay-ui" uri="http://liferay.com/tld/ui" %>
-<%@ page import="net.tanesha.recaptcha.ReCaptcha" %>
-<%@ page import="net.tanesha.recaptcha.ReCaptchaFactory" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
-<% ReCaptcha c = ReCaptchaFactory.newReCaptcha("6LcR2yAUAAAAAPuU-Pxo9ZMu_Foajgl-AFMPU_zj", "6LcR2yAUAAAAAHbWfvcvp-BwXpuAflsGqyLL8AAW", false); %>
 <portlet:defineObjects />
 <portlet:actionURL var="enviaFormUrl">
 	<portlet:param name="action" value="registro" />
 </portlet:actionURL>
+<portlet:resourceURL var="urlCaptcha"/>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -16,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title><liferay-ui:message key="inicio.titulo.pagina"/>e</title>
 
     <!-- Bootstrap -->
 <!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css"> -->
@@ -29,29 +30,39 @@
     <![endif]-->
   </head>
   <body>
-    <h1><spring:message code="inicio.cabecera"/></h1>
-    <div><form:errors cssClass="alert" path="*"/></div>
+    <h1><liferay-ui:message key="inicio.cabecera"/></h1>
+
 	<form:form id="registro" name="registro" action="<%=enviaFormUrl %>" method="post" modelAttribute="registroBean">
-	  <fieldset>
-	    <legend><liferay-ui:message key="inicio.titulo" /></legend>
-	    
-        <form:label path="nombre">Nombre</form:label>
-        <form:input path="nombre" placeholder="Introduce tu nombre..."></form:input>
-	    <form:errors cssClass="alert" path="nombre" />
-        <form:label path="apellidos">Apellidos</form:label>
-        <form:input path="apellidos" placeholder="Introduce tus apellidos..."></form:input>
-		<form:errors cssClass="alert" path="apellidos" />
-        <form:label path="fechaNacimiento">Fecha de nacimiento</form:label>
-		<div class="input-append date">
-			<form:input path="fechaNacimiento" class="span10"></form:input><span class="add-on"><i class="icon-th"></i></span>
-		</div>
-		<form:errors cssClass="alert" path="fechaNacimiento" />
-        <form:label path="email">Email</form:label>
-        <form:input path="email" placeholder="Introduce tu email..."></form:input>
-		<form:errors cssClass="alert" path="email" />
-		<% out.print(c.createRecaptchaHtml(null, null)); %>
-	    <input type="submit" class="btn btn-primary" value="Enviar">
-	  </fieldset>
+		<c:set var="erroresValidacion"><form:errors path="*"/></c:set>
+		<c:if test="${not empty erroresValidacion}">
+			<div class="alert alert-error">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<c:forEach items="${erroresValidacion}" var="error"> 
+					${error}
+				    <liferay-ui:message key="${error}"/>?<br/>
+				</c:forEach>
+			</div>
+		</c:if>
+	   		
+ 
+		<fieldset>
+			<form:label path="nombre"><liferay-ui:message key="inicio.nombre"/></form:label>
+			<c:set var="placeholderNombre"><liferay-ui:message key='inicio.placeholder.nombre'/></c:set>
+			<form:input path="nombre" placeholder="${placeholderNombre}"></form:input>
+			<form:label path="apellidos"><liferay-ui:message key="inicio.apellidos"/></form:label>
+			<c:set var="placeholderApellidos"><liferay-ui:message key='inicio.placeholder.apellidos'/></c:set>
+			
+			<form:input path="apellidos" placeholder="${placeholderApellidos}"></form:input>
+			<form:label path="fechaNacimiento"><liferay-ui:message key="inicio.fecha.nacimiento"/></form:label>
+			<div class="input-append date">
+				<form:input path="fechaNacimiento" class="span10"></form:input><span class="add-on"><i class="icon-th"></i></span>
+			</div>
+			<form:label path="email"><liferay-ui:message key="inicio.email"/></form:label>
+			<form:input path="email" placeholder="Introduce tu email..."></form:input>
+		
+			<liferay-ui:captcha url="<%= urlCaptcha %>"/>
+			<input type="submit" class="btn btn-primary" value="<liferay-ui:message key="inicio.boton.enviar"/>">
+		</fieldset>
 	</form:form>
 
     <!-- Scripts -->

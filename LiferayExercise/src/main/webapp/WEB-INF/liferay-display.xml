@@ -3,7 +3,7 @@
 
 <display>
 	
-	<category name="category.sample">
+	<category name="Ejercicios">
 		<portlet id="liferay-exercise"></portlet>
 	</category>
 </display>
