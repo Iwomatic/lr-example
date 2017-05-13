@@ -6,14 +6,14 @@
   <usages>
     <entry>
       <string>Liferay Example CI</string>
-      <ranges>4-6</ranges>
+      <ranges>4-9</ranges>
     </entry>
   </usages>
   <facets>
     <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
-      <timestamp>1494658296507</timestamp>
+      <timestamp>1494673591740</timestamp>
       <itemFullName>Liferay Example CI</itemFullName>
-      <timestamp0>1494657921312</timestamp0>
+      <timestamp0>1494673506998</timestamp0>
     </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
   </facets>
 </fingerprint>
