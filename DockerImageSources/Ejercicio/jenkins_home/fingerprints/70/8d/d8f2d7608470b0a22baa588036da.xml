@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-05-13 06:41:51.847 UTC</timestamp>
+  <md5sum>708dd8f2d7608470b0a22baa588036da</md5sum>
+  <fileName>Credential id=06062df7-867e-40e5-8343-d5656d27c9f7 name=ibairuiz@gmail.com/******</fileName>
+  <usages>
+    <entry>
+      <string>Liferay Example CI</string>
+      <ranges>4-6</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.1.13">
+      <timestamp>1494658296507</timestamp>
+      <itemFullName>Liferay Example CI</itemFullName>
+      <timestamp0>1494657921312</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>
