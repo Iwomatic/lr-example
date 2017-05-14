@@ -1,0 +1,717 @@
+Started by user [8mha:////4AFLcsw59iat0MBudLdgtQTYq4ymdpMY6RpFC6ZWxldYAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Building in workspace /var/setup/jenkins_home/workspace/Liferay Example Tests
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Iwomatic/lr-example.git # timeout=10
+Fetching upstream changes from https://github.com/Iwomatic/lr-example.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/Iwomatic/lr-example.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c9c112d31daaf373b9cd5cb29ed4eae7735c53ba (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c9c112d31daaf373b9cd5cb29ed4eae7735c53ba
+ > git rev-list c9c112d31daaf373b9cd5cb29ed4eae7735c53ba # timeout=10
+[Liferay Example Tests] $ /opt/apache-maven-3.5.0/bin/mvn -f LiferayExercise/pom.xml test -P Liferay-v6.2-CE-(Tomcat-7)
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding LiferayExercise Portlet 1.0.0[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mliferay-maven-plugin:6.2.5:build-css[m [1m(default)[m @ [36mLiferayExercise[0;1m ---[m
+Loading jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/system.properties
+May 14, 2017 11:00:34 PM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Global shared lib directory /root/.m2/repository/javax/servlet/servlet-api/2.5/
+May 14, 2017 11:00:34 PM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Global lib directory /root/.m2/repository/com/liferay/portal/portal-service/6.2.5/
+May 14, 2017 11:00:34 PM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Portal lib directory /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/
+May 14, 2017 11:00:34 PM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Properties for portal loaded from [jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/com/liferay/portal/tools/dependencies/portal-tools.properties, jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/portal.properties]
+Loading jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/portal.properties
+Loading jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/com/liferay/portal/tools/dependencies/portal-tools.properties
+Parsed /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/LiferayExercise/css/bootstrap-datepicker.css in 6685 ms
+Parsed /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/LiferayExercise/css/main.css in 201 ms
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mLiferayExercise[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.5:compile[m [1m(default-compile)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mLiferayExercise[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.5:testCompile[m [1m(default-testCompile)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Compiling 1 source file to /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/surefire-reports
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+Progress (1): 2.1/2.4 kBProgress (1): 2.4 kB                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (2.4 kB at 780 B/s)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+Progress (1): 2.1/2.3 kBProgress (1): 2.3 kB                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (2.3 kB at 26 kB/s)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+Progress (1): 2.8/37 kBProgress (1): 5.5/37 kBProgress (1): 8.3/37 kBProgress (1): 11/37 kB Progress (1): 14/37 kBProgress (1): 16/37 kBProgress (1): 19/37 kBProgress (1): 22/37 kBProgress (1): 25/37 kBProgress (1): 27/37 kBProgress (1): 30/37 kBProgress (1): 33/37 kBProgress (1): 36/37 kBProgress (1): 37 kB                      Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 kB at 238 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ibairuiz.examples.test.LiferayExampleControllerIntegrationTest
+23:00:47,748 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+23:00:47,749 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+23:00:47,749 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/classes/logback.xml]
+23:00:47,946 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+23:00:47,950 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+23:00:47,989 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+23:00:47,989 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+23:00:47,989 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+23:00:47,990 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.ibairuiz.examples] to TRACE
+23:00:47,990 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+23:00:47,991 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+23:00:47,991 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+23:00:47,992 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@fad74ee - Registering current configuration as safe fallback point
+May 14, 2017 11:00:48 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [test-applicationContext.xml]
+May 14, 2017 11:00:48 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@87f383f: startup date [Sun May 14 23:00:48 GMT 2017]; root of context hierarchy
+May 14, 2017 11:00:53 PM org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean createNativeEntityManagerFactory
+INFO: Building JPA container EntityManagerFactory for persistence unit 'default'
+23:00:53.171 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+23:00:53.219 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@30f842ca
+23:00:53.219 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@30f842ca
+23:00:53.219 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@30f842ca
+23:00:53.220 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@25df00a0
+23:00:53.222 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@491b9b8
+23:00:53.222 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@aba625
+23:00:53.224 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@3932c79a
+23:00:53.224 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@3932c79a
+23:00:53.224 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3932c79a
+23:00:53.225 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@821330f
+23:00:53.226 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@821330f
+23:00:53.226 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@821330f
+23:00:53.227 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1be2019a
+23:00:53.228 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1be2019a
+23:00:53.230 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1be2019a
+23:00:53.244 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@5340477f
+23:00:53.245 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@5340477f
+23:00:53.245 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5340477f
+23:00:53.248 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7eecb5b8
+23:00:53.248 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7eecb5b8
+23:00:53.248 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7eecb5b8
+23:00:53.250 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1b919693
+23:00:53.250 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1b919693
+23:00:53.260 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1b919693
+23:00:53.262 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6933b6c6
+23:00:53.262 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6933b6c6
+23:00:53.262 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6933b6c6
+23:00:53.264 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2d0399f4
+23:00:53.264 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2d0399f4
+23:00:53.265 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2254127a
+23:00:53.265 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2254127a
+23:00:53.266 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@14bdbc74
+23:00:53.266 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@14bdbc74
+23:00:53.267 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1b66c0fb
+23:00:53.267 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@1e4f4a5c
+23:00:53.268 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@23941fb4
+23:00:53.268 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@23941fb4
+23:00:53.271 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@2d29b4ee
+23:00:53.271 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2d29b4ee
+23:00:53.273 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@700fb871
+23:00:53.273 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@700fb871
+23:00:53.275 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@2f67a4d3
+23:00:53.275 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2f67a4d3
+23:00:53.275 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2f67a4d3
+23:00:53.277 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@49b2a47d
+23:00:53.278 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@642a7222
+23:00:53.278 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@642a7222
+23:00:53.278 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@642a7222
+23:00:53.279 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4f49f6af
+23:00:53.280 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@15d49048
+23:00:53.280 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@15d49048
+23:00:53.281 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@17503f6b
+23:00:53.281 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@17503f6b
+23:00:53.282 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@730d2164
+23:00:53.282 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@730d2164
+23:00:53.283 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4ee203eb
+23:00:53.283 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4ee203eb
+23:00:53.284 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@24105dc5
+23:00:53.284 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@24105dc5
+23:00:53.285 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18f8cd79
+23:00:53.285 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@6cc4cdb9
+23:00:53.286 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@32115b28
+23:00:53.287 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@32115b28
+23:00:53.287 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@32115b28
+23:00:53.288 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4b8729ff
+23:00:53.288 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4b8729ff
+23:00:53.288 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4b8729ff
+23:00:53.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@74287ea3
+23:00:53.302 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2f01783a
+23:00:53.302 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2f01783a
+23:00:53.302 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2f01783a
+23:00:53.303 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7ac296f6
+23:00:53.303 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7ac296f6
+23:00:53.303 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7ac296f6
+23:00:53.304 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@54e041a4
+23:00:53.319 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@238d68ff
+23:00:53.324 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@18ece7f4
+23:00:53.324 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@18ece7f4
+23:00:53.325 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@33f676f6
+23:00:53.328 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@478db956
+23:00:53.328 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@478db956
+23:00:53.333 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@dc9876b
+23:00:53.333 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@dc9876b
+23:00:53.333 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@a1f72f5
+23:00:53.349 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@75c56eb9
+23:00:53.360 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@5e17553a
+23:00:53.363 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@14f232c4
+23:00:53.363 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@14f232c4
+23:00:53.379 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@93081b6
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@cd1e646
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7ba8c737
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1890516e
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@15a04efb
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@16c069df
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2bec854f
+23:00:53.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@31edaa7d
+23:00:53.442 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+23:00:53.452 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.2.8.Final}
+23:00:53.455 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:00:53.457 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+23:00:53.483 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+23:00:53.483 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+23:00:53.484 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+23:00:53.485 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+23:00:53.486 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+23:00:53.490 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+23:00:53.491 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+23:00:53.492 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+23:00:53.492 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+23:00:53.493 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+23:00:53.493 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+23:00:53.494 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+23:00:53.494 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+23:00:53.495 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+23:00:53.495 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+23:00:53.497 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@30f842ca
+23:00:53.497 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@30f842ca
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@30f842ca
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@25df00a0
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@491b9b8
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@aba625
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@3932c79a
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@3932c79a
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3932c79a
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@821330f
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@821330f
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@821330f
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1be2019a
+23:00:53.498 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1be2019a
+23:00:53.499 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1be2019a
+23:00:53.499 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@5340477f
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@5340477f
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5340477f
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7eecb5b8
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7eecb5b8
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7eecb5b8
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1b919693
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1b919693
+23:00:53.500 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1b919693
+23:00:53.501 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6933b6c6
+23:00:53.502 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6933b6c6
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6933b6c6
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2d0399f4
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2d0399f4
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2254127a
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2254127a
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@14bdbc74
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@14bdbc74
+23:00:53.503 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1b66c0fb
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@1e4f4a5c
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@23941fb4
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@23941fb4
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@2d29b4ee
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2d29b4ee
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@700fb871
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@700fb871
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@2f67a4d3
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2f67a4d3
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2f67a4d3
+23:00:53.504 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@49b2a47d
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@642a7222
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@642a7222
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@642a7222
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4f49f6af
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@15d49048
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@15d49048
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@17503f6b
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@17503f6b
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@730d2164
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@730d2164
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4ee203eb
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4ee203eb
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@24105dc5
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@24105dc5
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@18f8cd79
+23:00:53.505 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@6cc4cdb9
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@32115b28
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@32115b28
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@32115b28
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4b8729ff
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4b8729ff
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4b8729ff
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@74287ea3
+23:00:53.506 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2f01783a
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2f01783a
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2f01783a
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7ac296f6
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7ac296f6
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7ac296f6
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@54e041a4
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@238d68ff
+23:00:53.507 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@18ece7f4
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@18ece7f4
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@33f676f6
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@478db956
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@478db956
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@dc9876b
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@dc9876b
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@a1f72f5
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@75c56eb9
+23:00:53.508 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@5e17553a
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@14f232c4
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@14f232c4
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@28d18df5
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@934b6cb
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@55cf0d14
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3b74ac8
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@27adc16e
+23:00:53.509 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@b83a9be
+23:00:53.510 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2609b277
+23:00:53.510 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1fd14d74
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+23:00:53.510 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+23:00:53.511 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+23:00:53.513 [main] DEBUG org.hibernate.ejb.Ejb3Configuration - Processing PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@232204a1
+	Temporary classloader: org.springframework.instrument.classloading.SimpleThrowawayClassLoader@3eb81efb
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/test-classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.ibairuiz.examples.persistence.beans.Registro]
+	Mapping files names []
+	Properties []
+23:00:53.516 [main] DEBUG org.hibernate.ejb.Ejb3Configuration - Detect class: true; detect hbm: true
+23:00:53.525 [main] DEBUG o.h.ejb.packaging.AbstractJarVisitor - Searching mapped entities in jar/par: file:/var/setup/jenkins_home/workspace/Liferay%20Example%20Tests/LiferayExercise/target/test-classes/
+23:00:53.526 [main] DEBUG o.h.ejb.packaging.AbstractJarVisitor - Filtering: com.ibairuiz.examples.test.LiferayExampleControllerIntegrationTest
+23:00:53.636 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+23:00:53.636 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.ejb.event.JpaIntegrator].
+23:00:53.656 [main] DEBUG org.hibernate.ejb.util.NamingHelper - No JNDI name configured for binding Ejb3Configuration
+23:00:53.664 [main] DEBUG org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+23:00:53.677 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+23:00:53.682 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+23:00:53.682 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: true
+23:00:53.682 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:mem:butterfly]
+23:00:53.683 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=sa, password=, autocommit=true, release_mode=auto}
+23:00:53.699 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Opening new JDBC connection
+23:00:54.102 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Created connection to: jdbc:hsqldb:mem:butterfly, Isolation Level: 2
+23:00:54.110 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - Database ->
+       name : HSQL Database Engine
+    version : 2.4.0
+      major : 2
+      minor : 4
+23:00:54.110 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - Driver ->
+       name : HSQL Database Engine Driver
+    version : 2.4.0
+      major : 2
+      minor : 4
+23:00:54.110 [main] DEBUG o.h.e.jdbc.internal.JdbcServicesImpl - JDBC version : 4.2
+23:00:54.131 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+23:00:54.170 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+23:00:54.170 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+23:00:54.173 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.ibairuiz.examples.persistence.beans.Registro
+23:00:54.191 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+23:00:54.196 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Registro
+23:00:54.198 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.ibairuiz.examples.persistence.beans.Registro on table registro
+23:00:54.221 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=id, insertable=true, updatable=true, unique=false}
+23:00:54.224 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property idRegistro with lazy=false
+23:00:54.226 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for idRegistro
+23:00:54.228 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property idRegistro
+23:00:54.242 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=apellidos, insertable=true, updatable=true, unique=false}
+23:00:54.242 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property apellidos with lazy=false
+23:00:54.243 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for apellidos
+23:00:54.243 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property apellidos
+23:00:54.243 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=captchaText, insertable=true, updatable=true, unique=false}
+23:00:54.243 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property captchaText with lazy=false
+23:00:54.243 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for captchaText
+23:00:54.244 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property captchaText
+23:00:54.244 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=email, insertable=true, updatable=true, unique=true}
+23:00:54.244 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+23:00:54.244 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email
+23:00:54.244 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email
+23:00:54.244 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=fechaNacimiento, insertable=true, updatable=true, unique=false}
+23:00:54.245 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property fechaNacimiento with lazy=false
+23:00:54.245 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for fechaNacimiento
+23:00:54.245 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property fechaNacimiento
+23:00:54.245 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=fechaRegistro, insertable=true, updatable=true, unique=false}
+23:00:54.245 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property fechaRegistro with lazy=false
+23:00:54.245 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for fechaRegistro
+23:00:54.246 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property fechaRegistro
+23:00:54.246 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(registro), mappingColumn=nombre, insertable=true, updatable=true, unique=false}
+23:00:54.246 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property nombre with lazy=false
+23:00:54.246 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for nombre
+23:00:54.246 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property nombre
+23:00:54.260 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for idRegistro
+23:00:54.261 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for apellidos
+23:00:54.261 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for captchaText
+23:00:54.279 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for email
+23:00:54.279 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for fechaNacimiento
+23:00:54.279 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for fechaRegistro
+23:00:54.279 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for nombre
+23:00:54.280 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+23:00:54.281 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:00:54.281 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:00:54.281 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+23:00:54.281 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+23:00:54.281 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+23:00:54.282 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+23:00:54.282 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+23:00:54.289 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+23:00:54.289 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+23:00:54.289 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC batch size: 15
+23:00:54.289 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC batch updates for versioned data: disabled
+23:00:54.289 [main] DEBUG org.hibernate.cfg.SettingsFactory - Scrollable result sets: enabled
+23:00:54.289 [main] DEBUG org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+23:00:54.290 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): enabled
+23:00:54.290 [main] DEBUG org.hibernate.cfg.SettingsFactory - multi-tenancy strategy : NONE
+23:00:54.290 [main] DEBUG org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+23:00:54.290 [main] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+23:00:54.301 [main] DEBUG org.hibernate.cfg.SettingsFactory - Using BatchFetchStyle : LEGACY
+23:00:54.302 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+23:00:54.303 [main] DEBUG org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+23:00:54.304 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+23:00:54.305 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+23:00:54.310 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default null ordering: none
+23:00:54.315 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+23:00:54.319 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+23:00:54.319 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+23:00:54.319 [main] DEBUG org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: enabled
+23:00:54.319 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+23:00:54.319 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query cache: disabled
+23:00:54.320 [main] DEBUG org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+23:00:54.320 [main] DEBUG org.hibernate.cfg.SettingsFactory - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache direct-reference entries: disabled
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Statistics: disabled
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+23:00:54.322 [main] DEBUG org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+23:00:54.323 [main] DEBUG org.hibernate.cfg.SettingsFactory - Allow initialization of lazy state outside session : : disabled
+23:00:54.323 [main] DEBUG org.hibernate.cfg.SettingsFactory - JTA Track by Thread: enabled
+23:00:54.334 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+23:00:54.345 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+23:00:54.346 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.vendor=Oracle Corporation, localRepository=/root/.m2/repository, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:hsqldb:mem:butterfly, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.ejb.discard_pc_on_close=false, hibernate.transaction.flush_before_completion=false, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-1.8-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-1.8-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-1.8-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-1.8-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8-openjdk/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8-openjdk/jre/classes, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_121-b13, hibernate.connection.autocommit=true, user.name=root, javax.persistence.validation.mode=AUTO, hibernate.connection.release_mode=auto, user.language=en, sun.boot.library.path=/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64, java.version=1.8.0_121, user.timezone=GMT, sun.arch.data.model=64, java.endorsed.dirs=/usr/lib/jvm/java-1.8-openjdk/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=52.0, IS_EJECUCION_TEST=true, user.country=US, java.home=/usr/lib/jvm/java-1.8-openjdk/jre, java.vm.info=mixed mode, os.version=4.9.27-moby, hibernate.transaction.factory_class=org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory, surefire.real.class.path=/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/surefire/surefirebooter5959419776037632938.jar, hibernate.query.jpaql_strict_compliance=true, path.separator=:, java.vm.version=25.121-b13, hibernate.connection.password=, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, hibernate.connection.username=sa, user.home=/root, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=create-drop, java.library.path=/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.hsqldb.jdbcDriver, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.HSQLDialect, java.runtime.name=OpenJDK Runtime Environment, sun.java.command=/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/surefire/surefirebooter5959419776037632938.jar /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/surefire/surefire6837277827458248401tmp /var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/surefire/surefire_01235124039232879415tmp, java.class.path=/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/test-classes:/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/classes:/root/.m2/repository/com/liferay/portal/portal-service/6.2.5/portal-service-6.2.5.jar:/root/.m2/repository/com/liferay/portal/util-bridges/6.2.5/util-bridges-6.2.5.jar:/root/.m2/repository/com/liferay/portal/util-taglib/6.2.5/util-taglib-6.2.5.jar:/root/.m2/repository/com/liferay/portal/util-java/6.2.5/util-java-6.2.5.jar:/root/.m2/repository/javax/portlet/portlet-api/2.0/portlet-api-2.0.jar:/root/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar:/root/.m2/repository/javax/servlet/jsp/jsp-api/2.0/jsp-api-2.0.jar:/root/.m2/repository/org/springframework/spring-core/4.0.1.RELEASE/spring-core-4.0.1.RELEASE.jar:/root/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/root/.m2/repository/org/springframework/spring-web/4.0.1.RELEASE/spring-web-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-aop/4.0.1.RELEASE/spring-aop-4.0.1.RELEASE.jar:/root/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/root/.m2/repository/org/springframework/spring-beans/4.0.1.RELEASE/spring-beans-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webmvc/4.0.1.RELEASE/spring-webmvc-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-expression/4.0.1.RELEASE/spring-expression-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webmvc-portlet/4.0.1.RELEASE/spring-webmvc-portlet-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tx/4.0.1.RELEASE/spring-tx-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-orm/4.0.1.RELEASE/spring-orm-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-jdbc/4.0.1.RELEASE/spring-jdbc-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-context/4.0.1.RELEASE/spring-context-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-context-support/4.0.1.RELEASE/spring-context-support-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-test/4.0.1.RELEASE/spring-test-4.0.1.RELEASE.jar:/root/.m2/repository/junit/junit/4.11/junit-4.11.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/com/github/markusf/spring-test-portlet-mvc/0.1.1/spring-test-portlet-mvc-0.1.1.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/root/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/root/.m2/repository/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar:/root/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.1/logback-core-1.2.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar:/root/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/root/.m2/repository/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar:/root/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar:/root/.m2/repository/org/hibernate/hibernate-entitymanager/4.2.8.Final/hibernate-entitymanager-4.2.8.Final.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar:/root/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/root/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar:/root/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar:/root/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.2.Final/hibernate-commons-annotations-4.0.2.Final.jar:/root/.m2/repository/org/hibernate/hibernate-core/4.2.8.Final/hibernate-core-4.2.8.Final.jar:/root/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=unknown, surefire.test.class.path=/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/test-classes:/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/target/classes:/root/.m2/repository/com/liferay/portal/portal-service/6.2.5/portal-service-6.2.5.jar:/root/.m2/repository/com/liferay/portal/util-bridges/6.2.5/util-bridges-6.2.5.jar:/root/.m2/repository/com/liferay/portal/util-taglib/6.2.5/util-taglib-6.2.5.jar:/root/.m2/repository/com/liferay/portal/util-java/6.2.5/util-java-6.2.5.jar:/root/.m2/repository/javax/portlet/portlet-api/2.0/portlet-api-2.0.jar:/root/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar:/root/.m2/repository/javax/servlet/jsp/jsp-api/2.0/jsp-api-2.0.jar:/root/.m2/repository/org/springframework/spring-core/4.0.1.RELEASE/spring-core-4.0.1.RELEASE.jar:/root/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/root/.m2/repository/org/springframework/spring-web/4.0.1.RELEASE/spring-web-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-aop/4.0.1.RELEASE/spring-aop-4.0.1.RELEASE.jar:/root/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/root/.m2/repository/org/springframework/spring-beans/4.0.1.RELEASE/spring-beans-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webmvc/4.0.1.RELEASE/spring-webmvc-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-expression/4.0.1.RELEASE/spring-expression-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webmvc-portlet/4.0.1.RELEASE/spring-webmvc-portlet-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tx/4.0.1.RELEASE/spring-tx-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-orm/4.0.1.RELEASE/spring-orm-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-jdbc/4.0.1.RELEASE/spring-jdbc-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-context/4.0.1.RELEASE/spring-context-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-context-support/4.0.1.RELEASE/spring-context-support-4.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/spring-test/4.0.1.RELEASE/spring-test-4.0.1.RELEASE.jar:/root/.m2/repository/junit/junit/4.11/junit-4.11.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/com/github/markusf/spring-test-portlet-mvc/0.1.1/spring-test-portlet-mvc-0.1.1.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/root/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/root/.m2/repository/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar:/root/.m2/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar:/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.1/logback-core-1.2.1.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar:/root/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/root/.m2/repository/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar:/root/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar:/root/.m2/repository/org/hibernate/hibernate-entitymanager/4.2.8.Final/hibernate-entitymanager-4.2.8.Final.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar:/root/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/root/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/root/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar:/root/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar:/root/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.2.Final/hibernate-commons-annotations-4.0.2.Final.jar:/root/.m2/repository/org/hibernate/hibernate-core/4.2.8.Final/hibernate-core-4.2.8.Final.jar:/root/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, javax.persistence.sharedCache.mode=UNSPECIFIED, os.arch=amd64, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/java-1.8-openjdk/jre/lib/ext:/usr/java/packages/lib/ext, user.dir=/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise, line.separator=
+, java.vm.name=OpenJDK 64-Bit Server VM, basedir=/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise, file.encoding=UTF-8, hibernate.use_identifier_rollback=false, java.specification.version=1.8, hibernate.show_sql=true}
+23:00:54.401 [main] INFO  org.hibernate.validator.util.Version - Hibernate Validator 4.2.0.Final
+23:00:54.415 [main] DEBUG o.h.v.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+23:00:54.415 [main] DEBUG o.h.v.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.engine.resolver.JPATraversableResolver.
+23:00:54.418 [main] DEBUG o.h.v.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+23:00:54.419 [main] DEBUG o.h.v.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only
+23:00:54.435 [main] DEBUG o.h.v.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+23:00:54.435 [main] DEBUG o.h.v.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.engine.resolver.JPATraversableResolver.
+23:00:54.435 [main] DEBUG o.h.v.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+23:00:54.435 [main] DEBUG o.h.v.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only
+23:00:54.462 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@7fe083b1, groups=[Ljava.lang.Class;@23c388c2}}
+23:00:54.466 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@54afd745, groups=[Ljava.lang.Class;@677dbd89}}
+23:00:54.479 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@c00fff0, groups=[Ljava.lang.Class;@263f04ca}}
+23:01:05.310 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.555 [main] DEBUG o.h.p.entity.AbstractEntityPersister - Static SQL for entity: com.ibairuiz.examples.persistence.beans.Registro
+23:01:05.555 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Version select: select id from registro where id =?
+23:01:05.555 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Snapshot select: select registro_.id, registro_.apellidos as apellido2_0_, registro_.captchaText as captchaT3_0_, registro_.email as email4_0_, registro_.fechaNacimiento as fechaNac5_0_, registro_.fechaRegistro as fechaReg6_0_, registro_.nombre as nombre7_0_ from registro registro_ where registro_.id=?
+23:01:05.555 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Insert 0: insert into registro (apellidos, captchaText, email, fechaNacimiento, fechaRegistro, nombre, id) values (?, ?, ?, ?, ?, ?, ?)
+23:01:05.556 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Update 0: update registro set apellidos=?, captchaText=?, email=?, fechaNacimiento=?, fechaRegistro=?, nombre=? where id=?
+23:01:05.579 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Delete 0: delete from registro where id=?
+23:01:05.580 [main] DEBUG o.h.p.entity.AbstractEntityPersister -  Identity insert: insert into registro (id, apellidos, captchaText, email, fechaNacimiento, fechaRegistro, nombre) values (default, ?, ?, ?, ?, ?, ?)
+23:01:05.608 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [NONE]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.609 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [READ]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.614 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [UPGRADE]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.615 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [UPGRADE_NOWAIT]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.615 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [FORCE]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.615 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [PESSIMISTIC_READ]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.616 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [PESSIMISTIC_WRITE]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.616 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [PESSIMISTIC_FORCE_INCREMENT]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.616 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [OPTIMISTIC]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.616 [main] DEBUG org.hibernate.loader.Loader - Static select for entity com.ibairuiz.examples.persistence.beans.Registro [OPTIMISTIC_FORCE_INCREMENT]: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.621 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.ibairuiz.examples.persistence.beans.Registro: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.621 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.ibairuiz.examples.persistence.beans.Registro: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:05.636 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@4e6d7365
+23:01:05.639 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 1ee6c0a6-c2d2-4330-8cc1-6da7d88f24c5 (<unnamed>)
+23:01:05.639 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+23:01:05.639 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+23:01:05.656 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+23:01:05.657 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+23:01:05.658 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+23:01:05.659 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+23:01:05.660 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.676 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.689 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+23:01:05.689 [main] DEBUG o.h.tool.hbm2ddl.SchemaExport - Import file not found: /import.sql
+23:01:05.691 [main] DEBUG org.hibernate.SQL - drop table registro if exists
+Hibernate: drop table registro if exists
+23:01:05.695 [main] DEBUG org.hibernate.SQL - create table registro (id bigint generated by default as identity (start with 1), apellidos varchar(255) not null, captchaText varchar(255), email varchar(255) not null, fechaNacimiento timestamp not null, fechaRegistro timestamp, nombre varchar(255) not null, primary key (id))
+Hibernate: create table registro (id bigint generated by default as identity (start with 1), apellidos varchar(255) not null, captchaText varchar(255), email varchar(255) not null, fechaNacimiento timestamp not null, fechaRegistro timestamp, nombre varchar(255) not null, primary key (id))
+23:01:05.697 [main] DEBUG org.hibernate.SQL - alter table registro add constraint UK_svqlqo2hd1f1kxd6yyi2x9dtq unique (email)
+Hibernate: alter table registro add constraint UK_svqlqo2hd1f1kxd6yyi2x9dtq unique (email)
+23:01:05.698 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+23:01:05.698 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+23:01:05.698 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+23:01:05.698 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+23:01:05.698 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.698 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+23:01:05.699 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.699 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+23:01:05.700 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+23:01:05.700 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+23:01:05.700 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+23:01:05.700 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+23:01:05.700 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+23:01:05.700 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.700 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.HSQLDialect]
+23:01:05.700 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking 0 named HQL queries
+23:01:05.701 [main] DEBUG o.h.internal.SessionFactoryImpl - Checking 0 named SQL queries
+23:01:05.712 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+23:01:05.742 [main] DEBUG o.h.e.i.EntityManagerFactoryRegistry - Initializing EntityManagerFactoryRegistry : org.hibernate.ejb.internal.EntityManagerFactoryRegistry@497570fb
+23:01:05.742 [main] DEBUG o.h.e.i.EntityManagerFactoryRegistry - Registering EntityManagerFactory: default 
+23:01:06.300 [main] DEBUG o.h.v.e.r.DefaultTraversableResolver - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+23:01:06.300 [main] DEBUG o.h.v.e.r.DefaultTraversableResolver - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.engine.resolver.JPATraversableResolver.
+23:01:06.301 [main] DEBUG o.h.v.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+23:01:06.301 [main] DEBUG o.h.v.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only
+23:01:06.593 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@7c6189d5, groups=[Ljava.lang.Class;@4248e66b}}
+23:01:06.593 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@66ad7bf0, groups=[Ljava.lang.Class;@167279d1}}
+23:01:06.594 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@4d96250, groups=[Ljava.lang.Class;@9a6fbc0}}
+23:01:06.630 [main] DEBUG c.i.e.c.LiferayExampleController - Registro Registro [nombre=Test, apellidos=Test, fechaNacimiento=Tue Jan 01 00:00:00 GMT 1980, email=test@test.com]
+23:01:06.712 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+23:01:06.713 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+23:01:06.713 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+23:01:06.713 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+23:01:06.713 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+23:01:06.746 [main] DEBUG org.hibernate.engine.spi.ActionQueue - Executing identity-insert immediately
+23:01:06.749 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@459cfcca, groups=[Ljava.lang.Class;@2acbc859}}
+23:01:06.750 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@2c6aed22, groups=[Ljava.lang.Class;@e322ec9}}
+23:01:06.750 [main] DEBUG o.h.v.m.ConstraintDescriptorImpl - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, payload=[Ljava.lang.Class;@2e5ee2c9, groups=[Ljava.lang.Class;@55a609dd}}
+23:01:06.753 [main] DEBUG org.hibernate.SQL - insert into registro (id, apellidos, captchaText, email, fechaNacimiento, fechaRegistro, nombre) values (default, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into registro (id, apellidos, captchaText, email, fechaNacimiento, fechaRegistro, nombre) values (default, ?, ?, ?, ?, ?, ?)
+23:01:06.763 [main] DEBUG o.h.id.IdentifierGeneratorHelper - Natively generated identity: 1
+23:01:06.767 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+23:01:06.767 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+23:01:06.770 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+23:01:06.770 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+23:01:06.771 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+23:01:06.772 [main] DEBUG o.h.internal.util.EntityPrinter - com.ibairuiz.examples.persistence.beans.Registro{apellidos=Test, fechaNacimiento=Tue Jan 01 00:00:00 GMT 1980, fechaRegistro=Sun May 14 23:01:06 GMT 2017, captchaText=0123, nombre=Test, email=test@test.com, idRegistro=1}
+23:01:06.773 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+23:01:06.773 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+23:01:06.773 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+23:01:06.773 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+23:01:06.773 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+23:01:06.773 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+23:01:06.773 [main] DEBUG o.h.internal.util.EntityPrinter - com.ibairuiz.examples.persistence.beans.Registro{apellidos=Test, fechaNacimiento=Tue Jan 01 00:00:00 GMT 1980, fechaRegistro=Sun May 14 23:01:06 GMT 2017, captchaText=0123, nombre=Test, email=test@test.com, idRegistro=1}
+23:01:06.774 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+23:01:06.774 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+23:01:06.775 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+23:01:06.775 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+23:01:06.777 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+23:01:06.777 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+23:01:06.777 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+23:01:06.777 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+23:01:06.777 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+23:01:06.780 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:06.784 [main] DEBUG org.hibernate.SQL - select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+Hibernate: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:06.785 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:01:06.786 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:06.789 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:06.789 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:06.790 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+23:01:06.791 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+23:01:06.791 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+23:01:06.791 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+23:01:06.791 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+23:01:06.791 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+23:01:06.791 [main] DEBUG c.i.e.c.LiferayExampleController - Registro recogido de BBDDRegistro [nombre=Test, apellidos=Test, fechaNacimiento=1980-01-01 00:00:00.0, email=test@test.com]
+DEBUG: JavaMail version 1.4.7
+DEBUG: successfully loaded resource: /META-INF/javamail.default.providers
+DEBUG: Tables of loaded providers
+DEBUG: Providers Listed By Class Name: {com.sun.mail.smtp.SMTPSSLTransport=javax.mail.Provider[TRANSPORT,smtps,com.sun.mail.smtp.SMTPSSLTransport,Oracle], com.sun.mail.smtp.SMTPTransport=javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle], com.sun.mail.imap.IMAPSSLStore=javax.mail.Provider[STORE,imaps,com.sun.mail.imap.IMAPSSLStore,Oracle], com.sun.mail.pop3.POP3SSLStore=javax.mail.Provider[STORE,pop3s,com.sun.mail.pop3.POP3SSLStore,Oracle], com.sun.mail.imap.IMAPStore=javax.mail.Provider[STORE,imap,com.sun.mail.imap.IMAPStore,Oracle], com.sun.mail.pop3.POP3Store=javax.mail.Provider[STORE,pop3,com.sun.mail.pop3.POP3Store,Oracle]}
+DEBUG: Providers Listed By Protocol: {imaps=javax.mail.Provider[STORE,imaps,com.sun.mail.imap.IMAPSSLStore,Oracle], imap=javax.mail.Provider[STORE,imap,com.sun.mail.imap.IMAPStore,Oracle], smtps=javax.mail.Provider[TRANSPORT,smtps,com.sun.mail.smtp.SMTPSSLTransport,Oracle], pop3=javax.mail.Provider[STORE,pop3,com.sun.mail.pop3.POP3Store,Oracle], pop3s=javax.mail.Provider[STORE,pop3s,com.sun.mail.pop3.POP3SSLStore,Oracle], smtp=javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]}
+DEBUG: successfully loaded resource: /META-INF/javamail.default.address.map
+DEBUG: getProvider() returning javax.mail.Provider[TRANSPORT,smtp,com.sun.mail.smtp.SMTPTransport,Oracle]
+DEBUG SMTP: useEhlo true, useAuth true
+DEBUG SMTP: trying to connect to host "smtp.gmail.com", port 587, isSSL false
+220 smtp.gmail.com ESMTP i19sm11239673wmf.0 - gsmtp
+DEBUG SMTP: connected to host "smtp.gmail.com", port: 587
+
+EHLO e46d290f2cd2
+250-smtp.gmail.com at your service, [83.46.48.11]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "STARTTLS", arg ""
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+STARTTLS
+220 2.0.0 Ready to start TLS
+EHLO e46d290f2cd2
+250-smtp.gmail.com at your service, [83.46.48.11]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+DEBUG SMTP: Found extension "SIZE", arg "35882577"
+DEBUG SMTP: Found extension "8BITMIME", arg ""
+DEBUG SMTP: Found extension "AUTH", arg "LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH"
+DEBUG SMTP: Found extension "ENHANCEDSTATUSCODES", arg ""
+DEBUG SMTP: Found extension "PIPELINING", arg ""
+DEBUG SMTP: Found extension "CHUNKING", arg ""
+DEBUG SMTP: Found extension "SMTPUTF8", arg ""
+DEBUG SMTP: Attempt to authenticate using mechanisms: LOGIN PLAIN DIGEST-MD5 NTLM 
+DEBUG SMTP: AUTH LOGIN command trace suppressed
+DEBUG SMTP: AUTH LOGIN succeeded
+DEBUG SMTP: use8bit false
+MAIL FROM:<usuariodecorreodepalo@gmail.com>
+250 2.1.0 OK i19sm11239673wmf.0 - gsmtp
+RCPT TO:<test@test.com>
+250 2.1.5 OK i19sm11239673wmf.0 - gsmtp
+DEBUG SMTP: Verified Addresses
+DEBUG SMTP:   test@test.com
+DATA
+354  Go ahead i19sm11239673wmf.0 - gsmtp
+Date: Sun, 14 May 2017 23:01:08 +0000 (GMT)
+From: usuariodecorreodepalo@gmail.com
+To: test@test.com
+Message-ID: <2025928493.0.1494802868216.JavaMail.root@e46d290f2cd2>
+Subject: Gracias por registrarte en nuestro portlet
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<h1>=A1Te damos la bienvenida Test!</h1><p>Es un placer tenerte a bordo de =
+este <strong>ejemplo de portlet de registro</strong>, =A1Esperamos que te g=
+uste!</p><p>Recibe un saludo,<br/>El equipo del portlet</p><p>Este correo s=
+e ha mandado a Test Test, si no eres Test, olvida este correo.</p>
+.
+250 2.0.0 OK 1494802865 i19sm11239673wmf.0 - gsmtp
+QUIT
+221 2.0.0 closing connection i19sm11239673wmf.0 - gsmtp
+23:01:09.354 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - begin
+23:01:09.354 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+23:01:09.354 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtained JDBC connection
+23:01:09.354 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - initial autocommit status: true
+23:01:09.354 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - disabling autocommit
+23:01:09.354 [main] DEBUG org.hibernate.loader.Loader - Loading entity: [com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:09.354 [main] DEBUG org.hibernate.SQL - select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+Hibernate: select registro0_.id as id1_0_0_, registro0_.apellidos as apellido2_0_0_, registro0_.captchaText as captchaT3_0_0_, registro0_.email as email4_0_0_, registro0_.fechaNacimiento as fechaNac5_0_0_, registro0_.fechaRegistro as fechaReg6_0_0_, registro0_.nombre as nombre7_0_0_ from registro registro0_ where registro0_.id=?
+23:01:09.355 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23:01:09.355 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:09.355 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:09.355 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.ibairuiz.examples.persistence.beans.Registro#1]
+23:01:09.356 [main] DEBUG org.hibernate.loader.Loader - Done entity load
+23:01:09.356 [main] DEBUG o.h.e.t.spi.AbstractTransactionImpl - committing
+23:01:09.356 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - committed JDBC Connection
+23:01:09.356 [main] DEBUG o.h.e.t.i.jdbc.JdbcTransaction - re-enabling autocommit
+23:01:09.357 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Releasing JDBC connection
+23:01:09.357 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Released JDBC connection
+23:01:09.357 [main] DEBUG c.i.e.t.LiferayExampleControllerIntegrationTest - Registro recibido: Registro [nombre=Test, apellidos=Test, fechaNacimiento=1980-01-01 00:00:00.0, email=test@test.com]
+23:01:09.369 [main] DEBUG c.i.e.c.LiferayExampleController - Entramos en handleRenderRequest()
+23:01:09.396 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+23:01:09.397 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found
+23:01:09.398 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+23:01:09.398 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found
+23:01:09.402 [main] ERROR c.i.e.c.LiferayExampleController - Error interno, el captcha no se encuentra en sesión
+23:01:09.402 [main] DEBUG c.i.e.c.LiferayExampleController - Hay errores en el action [Field error in object 'registroBean' on field 'fechaNacimiento': rejected value [null]; codes [NotNull.registroBean.fechaNacimiento,NotNull.fechaNacimiento,NotNull.java.util.Date,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registroBean.fechaNacimiento,fechaNacimiento]; arguments []; default message [fechaNacimiento]]; default message [may not be null], Field error in object 'registroBean' on field 'email': rejected value [null]; codes [NotBlank.registroBean.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registroBean.email,email]; arguments []; default message [email]]; default message [may not be empty], Field error in object 'registroBean' on field 'apellidos': rejected value [null]; codes [NotBlank.registroBean.apellidos,NotBlank.apellidos,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registroBean.apellidos,apellidos]; arguments []; default message [apellidos]]; default message [may not be empty], Field error in object 'registroBean' on field 'nombre': rejected value [null]; codes [NotBlank.registroBean.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registroBean.nombre,nombre]; arguments []; default message [nombre]]; default message [may not be empty], Field error in object 'registroBean' on field 'captchaText': rejected value [null]; codes [captcha.invalido.registroBean.captchaText,captcha.invalido.captchaText,captcha.invalido.java.lang.String,captcha.invalido]; arguments []; default message [null]]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.86 sec
+23:01:09.419 [Thread-1] DEBUG o.h.internal.SessionFactoryImpl - HHH000031: Closing
+23:01:09.419 [Thread-1] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+23:01:09.419 [Thread-1] DEBUG o.h.tool.hbm2ddl.SchemaExport - Import file not found: /import.sql
+23:01:09.420 [Thread-1] DEBUG org.hibernate.SQL - drop table registro if exists
+Hibernate: drop table registro if exists
+23:01:09.420 [Thread-1] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+23:01:09.421 [Thread-1] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000030: Cleaning up connection pool [jdbc:hsqldb:mem:butterfly]
+23:01:09.421 [Thread-1] DEBUG o.h.e.i.EntityManagerFactoryRegistry - Remove: name=default
+
+Results :
+
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 59.247 s
+[[1;34mINFO[m] Finished at: 2017-05-14T23:01:09Z
+[[1;34mINFO[m] Final Memory: 52M/214M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Finished: SUCCESS

@@ -1,0 +1,66 @@
+Started by upstream project "[8mha:////4AgC2F59+qHsjUo5V8KKWcoOd6m7hcSFHY628GVudeDnAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYZ/az8JH2fzLTUosRKVSMD14rE3IKcVCDL2VMfAOhHvsbRAAAA[0mLiferay Example CI" build number [8mha:////4AMIjwI4Lork+LbJri5BUyeA1fdrwGpAfZt7osVAUoTLAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgY5/az8JH2fzLTUosRKVSMD14rE3IKcVCDL2VPf0AAAiYY759MAAAA=[0m10
+originally caused by:
+ Started by user [8mha:////4AFLcsw59iat0MBudLdgtQTYq4ymdpMY6RpFC6ZWxldYAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Building in workspace /var/setup/jenkins_home/workspace/Liferay Example Tests
+Cloning the remote Git repository
+Cloning repository https://github.com/Iwomatic/lr-example.git
+ > git init /var/setup/jenkins_home/workspace/Liferay Example Tests # timeout=10
+Fetching upstream changes from https://github.com/Iwomatic/lr-example.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/Iwomatic/lr-example.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/Iwomatic/lr-example.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Iwomatic/lr-example.git # timeout=10
+Fetching upstream changes from https://github.com/Iwomatic/lr-example.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/Iwomatic/lr-example.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c9c112d31daaf373b9cd5cb29ed4eae7735c53ba (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c9c112d31daaf373b9cd5cb29ed4eae7735c53ba
+First time build. Skipping changelog.
+[Liferay Example Tests] $ /opt/apache-maven-3.5.0/bin/mvn -f LiferayExercise/pom.xml test
+[[1;34mINFO[m] Scanning for projects...
+[[1;31mERROR[m] [ERROR] Some problems were encountered while processing the POMs:
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for com.liferay.portal:portal-service:jar must be a valid version but is '${liferay.version}'. @ line 57, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for com.liferay.portal:util-bridges:jar must be a valid version but is '${liferay.version}'. @ line 63, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for com.liferay.portal:util-taglib:jar must be a valid version but is '${liferay.version}'. @ line 69, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for com.liferay.portal:util-java:jar must be a valid version but is '${liferay.version}'. @ line 75, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-core:jar must be a valid version but is '${spring.version}'. @ line 101, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-web:jar must be a valid version but is '${spring.version}'. @ line 106, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-webmvc:jar must be a valid version but is '${spring.version}'. @ line 111, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-webmvc-portlet:jar must be a valid version but is '${spring.version}'. @ line 116, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-tx:jar must be a valid version but is '${spring.version}'. @ line 121, column 16
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-orm:jar must be a valid version but is '${spring.version}'. @ line 126, column 16
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-context:jar must be a valid version but is '${spring.version}'. @ line 131, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-context-support:jar must be a valid version but is '${spring.version}'. @ line 136, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'dependencies.dependency.version' for org.springframework:spring-test:jar must be a valid version but is '${spring.version}'. @ line 143, column 13
+[8mha:////4D2bZvoezD3hE9iKOMM+zNYtAxc75ZRtV6T2HncG6ZeNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 'build.plugins.plugin.version' for com.liferay.maven.plugins:liferay-maven-plugin must be a valid version but is '${liferay.maven.plugin.version}'. @ line 16, column 14
+ @ 
+[[1;31mERROR[m] The build could not read 1 project -> [1m[Help 1][m
+[[1;31mERROR[m]   
+[[1;31mERROR[m]   The project com.ibairuiz.examples:LiferayExercise:1.0.0 (/var/setup/jenkins_home/workspace/Liferay Example Tests/LiferayExercise/pom.xml) has 14 errors
+[[1;31mERROR[m]     'dependencies.dependency.version' for com.liferay.portal:portal-service:jar must be a valid version but is '${liferay.version}'. @ line 57, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for com.liferay.portal:util-bridges:jar must be a valid version but is '${liferay.version}'. @ line 63, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for com.liferay.portal:util-taglib:jar must be a valid version but is '${liferay.version}'. @ line 69, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for com.liferay.portal:util-java:jar must be a valid version but is '${liferay.version}'. @ line 75, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-core:jar must be a valid version but is '${spring.version}'. @ line 101, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-web:jar must be a valid version but is '${spring.version}'. @ line 106, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-webmvc:jar must be a valid version but is '${spring.version}'. @ line 111, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-webmvc-portlet:jar must be a valid version but is '${spring.version}'. @ line 116, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-tx:jar must be a valid version but is '${spring.version}'. @ line 121, column 16
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-orm:jar must be a valid version but is '${spring.version}'. @ line 126, column 16
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-context:jar must be a valid version but is '${spring.version}'. @ line 131, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-context-support:jar must be a valid version but is '${spring.version}'. @ line 136, column 13
+[[1;31mERROR[m]     'dependencies.dependency.version' for org.springframework:spring-test:jar must be a valid version but is '${spring.version}'. @ line 143, column 13
+[[1;31mERROR[m]     'build.plugins.plugin.version' for com.liferay.maven.plugins:liferay-maven-plugin must be a valid version but is '${liferay.maven.plugin.version}'. @ line 16, column 14
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE
