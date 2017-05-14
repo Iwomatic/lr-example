@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Este job realiza CI y CD del código fuente de los fuentes del portlet</description>
+  <description>Este job descarga, compila y empaqueta el código fuente del portlet</description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.27.0">
@@ -30,11 +30,16 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec>H/15 * * * *</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Maven>
-      <targets>clean install -P Liferay-v6.2-CE-(Tomcat-7)</targets>
+      <targets>clean install -P Liferay-v6.2-CE-(Tomcat-7) -DskipTests=true</targets>
       <mavenName>Maven Local</mavenName>
       <pom>LiferayExercise/pom.xml</pom>
       <usePrivateRepository>false</usePrivateRepository>
@@ -42,9 +47,6 @@
       <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
       <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
-    <hudson.tasks.Shell>
-      <command>cp  &apos;/var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise.war&apos; /opt/liferay-portal-6.2-ce-ga6/deploy/ </command>
-    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>
