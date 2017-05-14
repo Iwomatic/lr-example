@@ -31,34 +31,33 @@
   </head>
   <body>
     <h1><liferay-ui:message key="inicio.cabecera"/></h1>
-
+	<!-- Formulario de registro. -->
 	<form:form id="registro" name="registro" action="<%=enviaFormUrl %>" method="post" modelAttribute="registroBean">
+		<!-- Seccion de errores -->
 		<c:set var="erroresValidacion"><form:errors path="*"/></c:set>
 		<c:if test="${not empty erroresValidacion}">
 			<div class="alert alert-error">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
 				<c:forEach items="${erroresValidacion}" var="error"> 
 					${error}
-				    <liferay-ui:message key="${error}"/>?<br/>
 				</c:forEach>
 			</div>
 		</c:if>
-	   		
- 
+
 		<fieldset>
 			<form:label path="nombre"><liferay-ui:message key="inicio.nombre"/></form:label>
 			<c:set var="placeholderNombre"><liferay-ui:message key='inicio.placeholder.nombre'/></c:set>
 			<form:input path="nombre" placeholder="${placeholderNombre}"></form:input>
 			<form:label path="apellidos"><liferay-ui:message key="inicio.apellidos"/></form:label>
 			<c:set var="placeholderApellidos"><liferay-ui:message key='inicio.placeholder.apellidos'/></c:set>
-			
 			<form:input path="apellidos" placeholder="${placeholderApellidos}"></form:input>
 			<form:label path="fechaNacimiento"><liferay-ui:message key="inicio.fecha.nacimiento"/></form:label>
 			<div class="input-append date">
 				<form:input path="fechaNacimiento" class="span10"></form:input><span class="add-on"><i class="icon-th"></i></span>
 			</div>
+			<c:set var="placeholderEmail"><liferay-ui:message key='inicio.placeholder.email'/></c:set>
 			<form:label path="email"><liferay-ui:message key="inicio.email"/></form:label>
-			<form:input path="email" placeholder="Introduce tu email..."></form:input>
+			<form:input path="email" placeholder="${placeholderEmail}"></form:input>
 		
 			<liferay-ui:captcha url="<%= urlCaptcha %>"/>
 			<input type="submit" class="btn btn-primary" value="<liferay-ui:message key="inicio.boton.enviar"/>">
