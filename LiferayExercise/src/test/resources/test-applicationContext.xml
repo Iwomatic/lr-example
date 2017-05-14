@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+	<context:component-scan base-package="com.ibairuiz.examples" />
+	
+	<!-- Inicialización de la validación -->
+	<mvc:annotation-driven validator="validator" />
+
+	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+	
+	<bean id="annotationMethodHandlerAdapter" class="org.springframework.web.portlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	    <property name="webBindingInitializer">
+	        <bean id="configurableWebBindingInitializer" class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+	            <property name="validator">
+	                <ref bean="validator"/>
+	            </property>
+	        </bean>
+	    </property>
+	</bean>
+	
+	<bean class="org.springframework.web.portlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+	
+	<!-- View Resolver -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/html/liferayexercise/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<!-- Soporte i18n -->
+	<!-- <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>content.literales_en</value>
+				<value>content.literales_es</value>
+			</list>
+		</property>
+	</bean>-->
+
+	
+	<!-- Usamos el DS de Liferay -->
+<!-- 	<bean id="dataSource" class="com.liferay.portal.kernel.util.InfrastructureUtil" factory-method="getDataSource" /> -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <!-- <property name="dataSource" ref="dataSource" />-->
+        <property name="packagesToScan" >
+            <list>
+                <value>com.ibairuiz.examples.persistence</value>
+            </list>
+        </property>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+		<property name="jpaProperties">
+		   <props>
+		      <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+		      <prop key="hibernate.connection.url">jdbc:hsqldb:mem:butterfly</prop>
+		      <prop key="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</prop>
+		      <prop key="hibernate.connection.username">sa</prop>
+		      <prop key="hibernate.connection.password"></prop>
+		      <prop key="hibernate.show_sql">true</prop>
+		      <prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
+		   </props>
+		</property>
+    </bean>
+     <!-- Add Transaction support -->
+    <bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+    
+    <!-- Usamos la anotacion @Transaction para manejar las transacciones.  -->
+    <tx:annotation-driven transaction-manager="txManager"/>
+    
+    <!-- Bean para email -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="587" />
+		<property name="username" value="usuariodecorreodepalo@gmail.com" />
+		<property name="password" value="Liferay_exercise!" />
+ 
+		<!-- Configuración de JavaMail -->
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
