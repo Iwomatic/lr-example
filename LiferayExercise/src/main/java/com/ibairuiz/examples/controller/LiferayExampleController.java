@@ -34,7 +34,6 @@ import org.springframework.web.portlet.bind.annotation.ResourceMapping;
 import com.ibairuiz.examples.persistence.RegistroDAO;
 import com.ibairuiz.examples.persistence.beans.Registro;
 import com.ibairuiz.examples.services.MailService;
-import com.ibairuiz.examples.test.LiferayExampleControllerIntegrationTest;
 import com.liferay.portal.kernel.captcha.CaptchaUtil;
 import com.liferay.portal.kernel.util.ParamUtil;
 import com.liferay.portal.kernel.util.Validator;
@@ -58,7 +57,10 @@ public class LiferayExampleController {
 	
 	/** Constante con la vista de resultado. **/
 	public static final String RESULTADO = "resultado";
-	
+
+	/** Constante para comprobación de entorno de test. **/
+	private static final String IS_EJECUCION_TEST = "IS_EJECUCION_TEST";
+
 	@Autowired
 	private RegistroDAO registroDao;
 	
@@ -191,8 +193,8 @@ public class LiferayExampleController {
      * Si estamos en entorno de test, añadimos el valor de captcha a la sesión.
      */
     private void checkEntornoTest(PortletSession session) {
-    	if (System.getProperty(LiferayExampleControllerIntegrationTest.IS_EJECUCION_TEST) != null 
-    			&& Boolean.parseBoolean(System.getProperty(LiferayExampleControllerIntegrationTest.IS_EJECUCION_TEST))) {
+    	if (System.getProperty(IS_EJECUCION_TEST) != null 
+    			&& Boolean.parseBoolean(System.getProperty(IS_EJECUCION_TEST))) {
     		session.setAttribute("CAPTCHA_TEXT", "0123");
     	}
 	}
