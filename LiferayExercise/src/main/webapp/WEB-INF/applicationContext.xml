@@ -17,7 +17,6 @@
 	
 	<!-- Inicialización de la validación -->
 	<mvc:annotation-driven validator="validator" />
-
 	<bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
 	
 	<bean id="annotationMethodHandlerAdapter" class="org.springframework.web.portlet.mvc.annotation.AnnotationMethodHandlerAdapter">
@@ -30,8 +29,6 @@
 	    </property>
 	</bean>
 	
-	<bean class="org.springframework.web.portlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
-	
 	<!-- View Resolver -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -42,22 +39,19 @@
 		</property>
 	</bean>
 
-	<!-- Soporte i18n -->
-	<!-- <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	<!-- Soporte i18n para los mensajes de validación de Hibernate -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basenames">
 			<list>
-				<value>content.literales_en</value>
 				<value>content.literales_es</value>
+				<value>content.literales_en</value>
 			</list>
 		</property>
-	</bean>-->
-
-	<!-- Bean recaptcha -->
-	<bean id="reCaptcha" class="net.tanesha.recaptcha.ReCaptchaImpl">
-		<property name="privateKey" value="your_recaptcha_private_key"/>
 	</bean>
+
+	<bean class="org.springframework.web.portlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
 	
-	<!-- Usamos el DS de Liferay -->
+	<!-- Definimos el entityManagerFactory usando el DS de Liferay -->
 	<bean id="dataSource" class="com.liferay.portal.kernel.util.InfrastructureUtil" factory-method="getDataSource" />
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
@@ -72,19 +66,20 @@
         </property>
 		<property name="jpaProperties">
 		   <props>
-		      <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+		      <prop key="hibernate.hbm2ddl.auto">update</prop>
 		      <prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
 		   </props>
 		</property>
     </bean>
-     <!-- Add Transaction support -->
-    <bean id="txManager"
+
+     <!-- Transaction Manager -->
+    <bean id="transactionManager"
           class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
     
     <!-- Usamos la anotacion @Transaction para manejar las transacciones.  -->
-    <tx:annotation-driven transaction-manager="txManager"/>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
     
     <!-- Bean para email -->
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
