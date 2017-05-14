@@ -23,8 +23,10 @@ RUN curl -O -k -L -C - http://downloads.sourceforge.net/project/lportal/Liferay%
 	&& unzip liferay-portal-tomcat-6.2-ce-ga6-20160112152609836.zip -d /opt \
 	&& rm liferay-portal-tomcat-6.2-ce-ga6-20160112152609836.zip
 
-# Añadimos portal-ext.properties
+# Añadimos configuracion de Liferay
 ADD lr-setup/portal-ext.properties /opt/liferay-portal-6.2-ce-ga6/portal-ext.properties
+ADD lr-setup/public.lar /opt/liferay-portal-6.2-ce-ga6/public.lar
+ADD lr-setup/LiferayExercise.war /opt/liferay-portal-6.2-ce-ga6/deploy/LiferayExercise.war
 
 #Descargamos y descomprimimos Maven
 RUN curl -O -k -L -C - http://apache.uvigo.es/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip \
