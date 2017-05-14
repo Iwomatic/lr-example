@@ -12,21 +12,28 @@ import org.springframework.stereotype.Service;
 
 import com.ibairuiz.examples.services.beans.CuerpoCorreoRegistro;
 
+/**
+ * Servicio para el envío de correo.
+ * @author ibai.ruiz
+ *
+ */
 @Service("servicioCorreo")
 public class MailService {
 	
+	/** Instancia del logger. **/
 	Logger logger = LoggerFactory.getLogger(MailService.class);
 
+	/** Gestor email. **/
 	@Autowired
 	private JavaMailSender gestorEmail; 
 
 	/**
-	 * 
-	 * @param para
-	 * @param de
-	 * @param asunto
-	 * @param nombreUsuario
-	 * @param apellidosUsuario
+	 * Método que envía el correo de bienvenida de registro.
+	 * @param para Dirección de correo de destino.
+	 * @param de Dirección de correo de origen.
+	 * @param asunto Asunto del correo.
+	 * @param nombreUsuario Nombre del usuario que se ha registrado.
+	 * @param apellidosUsuario Apellidos del usuario que se ha registrado.
 	 */
 	public void enviaCorreoRegistro(final String para, final String de, final String nombreUsuario, final String apellidosUsuario) {
 		CuerpoCorreoRegistro cuerpoCorreo = new CuerpoCorreoRegistro(nombreUsuario, apellidosUsuario);
@@ -34,11 +41,11 @@ public class MailService {
 	}
 	
 	/**
-	 * 
-	 * @param para
-	 * @param de
-	 * @param asunto
-	 * @param cuerpo
+	 * Método que envía un correo simple.
+	 * @param para Dirección de correo de destino.
+	 * @param de Dirección de correo de origen.
+	 * @param asunto Asunto del correo.
+	 * @param cuerpo Cuerpo del email, al ser tipo MIME admite HTML.
 	 */
 	public void enviaCorreoSimple(final String para, final String de, final String asunto, final String cuerpo) {
 		try {
@@ -53,5 +60,4 @@ public class MailService {
 			logger.error("No ha sido posible enviar el correo");
 		}
 	}
-
 }

@@ -12,39 +12,52 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
+/**
+ * Bean de Registro, es una entidad JPA, con sus restricciones y validaciones.
+ * @author ibai.ruiz
+ *
+ */
 @Entity
 @Table(name = "registro")
 public class Registro {
 	
+	/** Columna idRegistro. **/
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private long idRegistro;	
 
-	@NotBlank(message="{validacion.nombre.vacio}")
+	/** Columna nombre. **/
+	@NotBlank
 	@Column(name = "nombre")
 	private String nombre;
-	
-	@NotBlank(message="Por favor introduzca sus apellidos.")
+
+	/** Columna apellidos. **/
+	@NotBlank
 	@Column(name = "apellidos")
 	private String apellidos;
 	
-	@NotNull(message="Por favor introduzca su fecha de nacimiento.")
+	/** Columna fecha de nacimiento. **/
+	@NotNull
 	@Column(name = "fechaNacimiento")
 	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Date fechaNacimiento;
 	
-	@NotBlank(message="Por favor introduzca su email.")
+	/** Columna email. **/
+	@NotBlank
 	@Email
-	@Column(name = "email")
+	@Column(name = "email", unique= true)
 	private String email;
 	
+	/** Columna fechaRegistro. **/
 	@Column(name = "fechaRegistro")
 	private Date fechaRegistro;
 
+	/** Texto del captcha, no se persiste en BBDD, pero se utiliza en el bean para validaciones. **/
+	private String captchaText;
+	
 	/**
 	 * @return the idRegistro
 	 */
@@ -131,6 +144,20 @@ public class Registro {
 		this.fechaRegistro = fechaRegistro;
 	}
 
+	/**
+	 * @return the captchaText
+	 */
+	public String getCaptchaText() {
+		return captchaText;
+	}
+
+	/**
+	 * @param captchaText the captchaText to set
+	 */
+	public void setCaptchaText(String captchaText) {
+		this.captchaText = captchaText;
+	}
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
@@ -148,5 +175,4 @@ public class Registro {
 		builder.append("]");
 		return builder.toString();
 	}
-
 }
