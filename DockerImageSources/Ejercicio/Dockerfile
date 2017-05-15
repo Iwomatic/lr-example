@@ -44,7 +44,9 @@ EXPOSE 8081
 
 # Copiamos scripts
 COPY scripts/run-exercise.sh /usr/share/exercise/run-exercise.sh
-COPY scripts/copy.sh /var/setup/compartido/copy.sh
+COPY scripts/copy.sh /var/setup/copy.sh
+COPY scripts/startJenkins.sh /var/setup/startJenkins.sh
+COPY scripts/stopJenkins.sh /var/setup/stopJenkins.sh
 
 # Punto de entrada
 RUN ["chmod", "+x", "/usr/share/exercise/run-exercise.sh"]
