@@ -1,6 +1,0 @@
-tree 39baa5ccacc5ca611becd9081f4efbe39edb393f
-parent 769294d0d7acf20766c1fad3c1fcd7c9e3f29798
-author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 1494670752 +0200
-committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 1494670752 +0200
-
-Se añade Maven, limpia el dockerfile y se añade maven al path
