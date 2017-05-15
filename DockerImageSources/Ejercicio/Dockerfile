@@ -6,6 +6,7 @@ RUN apk add --no-cache git openssh-client curl unzip bash ttf-dejavu coreutils
 RUN mkdir -p /usr/share/jenkins/
 RUN mkdir -p /usr/share/exercise
 RUN mkdir -p /var/setup/jenkins_home
+RUN mkdir -p /var/setup/fuentes
 
 # Variables de entorno
 ENV JENKINS_HOME /var/setup/jenkins_home
