@@ -1,0 +1,9 @@
+Started on May 14, 2017 11:01:05 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision c9c112d31daaf373b9cd5cb29ed4eae7735c53ba (refs/remotes/origin/master)
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/Iwomatic/lr-example.git # timeout=10
+Found 1 remote heads on https://github.com/Iwomatic/lr-example.git
+[poll] Latest remote head revision on refs/heads/master is: c9c112d31daaf373b9cd5cb29ed4eae7735c53ba - already built by 10
+Done. Took 0.81 sec
+No changes

@@ -1,0 +1,91 @@
+Started by user [8mha:////4AFLcsw59iat0MBudLdgtQTYq4ymdpMY6RpFC6ZWxldYAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Building in workspace /var/setup/jenkins_home/workspace/Liferay Example CI
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Iwomatic/lr-example.git # timeout=10
+Fetching upstream changes from https://github.com/Iwomatic/lr-example.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/Iwomatic/lr-example.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b137de2cc410e462b13e39dce7b9c9aac58fdbb0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b137de2cc410e462b13e39dce7b9c9aac58fdbb0
+ > git rev-list b137de2cc410e462b13e39dce7b9c9aac58fdbb0 # timeout=10
+[Liferay Example CI] $ /opt/apache-maven-3.5.0/bin/mvn -f LiferayExercise/pom.xml clean install -P Liferay-v6.2-CE-(Tomcat-7)
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.ibairuiz.examples:LiferayExercise:war:1.0.0-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: javax.mail:mail:jar -> duplicate declaration of version 1.4.7 @ line 176, column 15
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding LiferayExercise Portlet 1.0.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mliferay-maven-plugin:6.2.5:build-css[m [1m(default)[m @ [36mLiferayExercise[0;1m ---[m
+Loading jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20CI/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/system.properties
+May 13, 2017 11:06:10 AM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Global shared lib directory /root/.m2/repository/javax/servlet/servlet-api/2.5/
+May 13, 2017 11:06:10 AM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Global lib directory /root/.m2/repository/com/liferay/portal/portal-service/6.2.5/
+May 13, 2017 11:06:10 AM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Portal lib directory /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/
+May 13, 2017 11:06:10 AM com.liferay.portal.kernel.log.Jdk14LogImpl info
+INFO: Properties for portal loaded from [jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20CI/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/com/liferay/portal/tools/dependencies/portal-tools.properties, jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20CI/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/portal.properties]
+Loading jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20CI/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/portal.properties
+Loading jar:file:/var/setup/jenkins_home/workspace/Liferay%20Example%20CI/LiferayExercise/target/liferay-work/appServerPortalDir/WEB-INF/lib/portal-impl.jar!/com/liferay/portal/tools/dependencies/portal-tools.properties
+Parsed /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise/css/bootstrap-datepicker.css in 5666 ms
+Parsed /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise/css/main.css in 127 ms
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:resources[m [1m(default-resources)[m @ [36mLiferayExercise[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.5:compile[m [1m(default-compile)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Compiling 5 source files to /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.5:testResources[m [1m(default-testResources)[m @ [36mLiferayExercise[0;1m ---[m
+[debug] execute contextualize
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:2.5:testCompile[m [1m(default-testCompile)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:2.2:war[m [1m(default-war)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [LiferayExercise] in [/var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/src/main/webapp]
+[[1;34mINFO[m] Webapp assembled in [223 msecs]
+[[1;34mINFO[m] Building war: /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise.war
+[[1;34mINFO[m] WEB-INF/web.xml already added, skipping
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mLiferayExercise[0;1m ---[m
+[[1;34mINFO[m] Installing /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise.war to /root/.m2/repository/com/ibairuiz/examples/LiferayExercise/1.0.0-SNAPSHOT/LiferayExercise-1.0.0-SNAPSHOT.war
+[[1;34mINFO[m] Installing /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/pom.xml to /root/.m2/repository/com/ibairuiz/examples/LiferayExercise/1.0.0-SNAPSHOT/LiferayExercise-1.0.0-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 31.979 s
+[[1;34mINFO[m] Finished at: 2017-05-13T11:06:20Z
+[[1;34mINFO[m] Final Memory: 49M/211M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[Liferay Example CI] $ /bin/sh -xe /tmp/hudson8186724111807464717.sh
++ cp /var/setup/jenkins_home/workspace/Liferay Example CI/LiferayExercise/target/LiferayExercise.war/opt/liferay-portal-6.2-ce-ga6/deploy/
+cp: target 'CI/LiferayExercise/target/LiferayExercise.war/opt/liferay-portal-6.2-ce-ga6/deploy/' is not a directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

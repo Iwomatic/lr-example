@@ -1,0 +1,129 @@
+commit c9c112d31daaf373b9cd5cb29ed4eae7735c53ba
+tree c507c6d2d937f0714da1ecef01b0ae066ba3f738
+parent ba72ac4e5b422cfce38555ad74452fcbf62d7788
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:22:34 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:22:34 +0200
+
+    Se elimina, no es necesario
+
+
+
+:100644 000000 f97e5ce9c4c3006d5ca03985fe1803e37eaa307e 0000000000000000000000000000000000000000 D	DockerImageSources/Ejercicio/setup-users.groovy
+commit ba72ac4e5b422cfce38555ad74452fcbf62d7788
+tree e986b8531f796be1e7b1220d7e617ab258b7ccc7
+parent d6564a3201420e35712cf71a50fab6b8216f72f5
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:21:04 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:21:04 +0200
+
+    Comentarios y limpieza
+
+
+
+:100644 100644 c68a02a6c7ac636561a973fd2eae2221564af75c 46a82fd693cd1f9b744a29ec9511fd3bb87080b0 M	LiferayExercise/src/main/webapp/WEB-INF/applicationContext.xml
+:100644 100644 17d55bc05d9d76d057b607a1af6259fc45a11296 96db5f96c29a1ad08ff15bb72163dbbb7a8bb941 M	LiferayExercise/src/main/webapp/WEB-INF/liferay-display.xml
+:100644 100644 8e2b6890e3f3ba3095c8e0f4845dfd2b08dc4ea1 f03a555cf90d0970c06d33e7214334208515642e M	LiferayExercise/src/main/webapp/WEB-INF/liferay-portlet.xml
+commit d6564a3201420e35712cf71a50fab6b8216f72f5
+tree afc89e68675bfb965b59270f31b2db8bc43a3f37
+parent 9af881365b344819250d8596be60473b1a7ef041
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:20:31 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:20:31 +0200
+
+    Comentarios
+
+
+
+:100644 100644 cec4e72bd9e18b909dc8ee7db1f31b1eec95968a 3578ba82aa7c67855e6e082d6b4315c5b065b97e M	LiferayExercise/pom.xml
+commit 9af881365b344819250d8596be60473b1a7ef041
+tree 5fd441b104bc251eb8b246048b95376e9791db1e
+parent d8b166023680c9bdac9444ab39ad51d2d2da71d8
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:18:16 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:18:16 +0200
+
+    Placeholder de email y limpieza
+
+
+
+:100644 100644 4b6826d556970791f6ead973f8651963d8f183c9 fa4a8672decbfaec4df644ff180a7e8cc5d4f515 M	LiferayExercise/src/main/webapp/html/liferayexercise/inicio.jsp
+commit d8b166023680c9bdac9444ab39ad51d2d2da71d8
+tree 94fdbd19d42bee9801dbfbd3f3954b2770f9ffb5
+parent 2ed44a63b35f810fca9e52c393737246bb5ea570
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:17:03 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:17:03 +0200
+
+    Se limpian literales
+
+
+
+:100644 100644 e889378e1574f69fe44ef89fbc0ce34f2b6cdf96 eb981f9643e1d1c1522060f22f1ccd737ca43348 M	LiferayExercise/src/main/resources/content/literales_en.properties
+:100644 100644 60aeb6cb807bf7cd0f8f1af96f7ecab1b7bd3c1b 3d90603eb13e483ad57231a64713f5f2fcae7afa M	LiferayExercise/src/main/resources/content/literales_es.properties
+commit 2ed44a63b35f810fca9e52c393737246bb5ea570
+tree 073a50f361e33f3e47f273562f401eb72a9b7337
+parent 907b5af0a9e39b9eb022fbf89822ec8078713ccd
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:16:34 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:16:34 +0200
+
+    Se añaden Tests de integración y unitarios
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 7ee26dc1c32f1abc24c1b355a6b8873cba408b52 A	LiferayExercise/src/test/java/com/ibairuiz/examples/test/LiferayExampleControllerIntegrationTest.java
+:000000 100644 0000000000000000000000000000000000000000 eee458e7fe2b4d3984b09c89b033a9558bba70a7 A	LiferayExercise/src/test/resources/test-applicationContext.xml
+commit 907b5af0a9e39b9eb022fbf89822ec8078713ccd
+tree 74447862554f3950484c8029845b2a3bf56f5e4b
+parent 825a8137cec67094c0a6d247be9e1cd6b22c5bc0
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:15:59 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 23:15:59 +0200
+
+    Limpieza y comentarios
+
+
+
+:100644 100644 9990aea7aa57974091e7c7e442bf32438044423f 9ccb242f2ce3287fc751d31aea12f96cd0b0b1ea M	LiferayExercise/src/main/java/com/ibairuiz/examples/persistence/RegistroDAO.java
+:100644 100644 7a8ac4e402b8013397883aa9f08a59238e084311 8a62db001d768a68119ad89f265674f092fac36b M	LiferayExercise/src/main/java/com/ibairuiz/examples/persistence/beans/Registro.java
+:100644 100644 31859d2b0547ec45cb627fc6ba506dce72ad45d7 f90db7ef6ee5f9aed63ff4bf20f4e833c2ff9d12 M	LiferayExercise/src/main/java/com/ibairuiz/examples/services/MailService.java
+:100644 100644 14743406fcb8d9245f57b31bab6b4b8851f54a44 cc994e61fc8f6e9015da7b72631bbe2997f68374 M	LiferayExercise/src/main/java/com/ibairuiz/examples/services/beans/CuerpoCorreoRegistro.java
+commit 825a8137cec67094c0a6d247be9e1cd6b22c5bc0
+tree 9d2ef3a5dee23fcbfebd9a5f94b8e452657c3c18
+parent 30efc35f311d4caafae40b5fa9ae766a7357c232
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 22:59:48 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 22:59:48 +0200
+
+    Fix de visibilidad de la variable de entorno de test
+
+
+
+:100644 100644 f94ff1195b04d00fc145671b2f7a0b9c8101fddb 4649286d5d6c330723167800d6b5383c24861c19 M	LiferayExercise/src/main/java/com/ibairuiz/examples/controller/LiferayExampleController.java
+commit 30efc35f311d4caafae40b5fa9ae766a7357c232
+tree aa168f00bc1e6a275a0bce19f4779d1916205812
+parent a734aeb11fe7ec5f4780e0e11a70b21b1c1ef874
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 22:14:41 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-14 22:14:41 +0200
+
+    Comentarios, fixes de estilos, limpieza y check de sesión en el captcha.
+
+
+
+:100644 100644 a78b6f8e454e0907dc662dfffff819a94af1aff4 f94ff1195b04d00fc145671b2f7a0b9c8101fddb M	LiferayExercise/src/main/java/com/ibairuiz/examples/controller/LiferayExampleController.java
+commit a734aeb11fe7ec5f4780e0e11a70b21b1c1ef874
+tree b687a414a994f297dfdc6c3ed08f191489bb5b49
+parent b137de2cc410e462b13e39dce7b9c9aac58fdbb0
+author ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-13 18:24:59 +0200
+committer ibai.ruiz <ibai.ruiz@GICA-MAD-295.grupoica.local> 2017-05-13 18:24:59 +0200
+
+    Cambios a los logs de Jenkins
+
+
+
+:100644 100644 a095fc03e5722ce558769f8803547b66fff095e3 cf45c8826b241953a63823402e5b18075a7715f6 M	DockerImageSources/Ejercicio/Dockerfile
+:100644 100644 1e464113c96b372956c4d4e71df65975617d0a0d 81ad885e5eec285438d7d8143aa3fdbf781bc9b1 M	DockerImageSources/Ejercicio/jenkins_home/.owner
+:100644 100644 8a5f9a317a7814e16d1e0da49c3244c0a8157e2f c73b3d914f9fa51174e0ddb258faa69fe54dc3c7 M	DockerImageSources/Ejercicio/jenkins_home/fingerprints/70/8d/d8f2d7608470b0a22baa588036da.xml
+:000000 100644 0000000000000000000000000000000000000000 b9ce8b62ac13523a1990877626000ebfaa6e6b18 A	DockerImageSources/Ejercicio/jenkins_home/hudson.plugins.gradle.Gradle.xml
+:000000 100644 0000000000000000000000000000000000000000 673a64bc5475c89cb9eaea081ad834e7a13dbb43 A	DockerImageSources/Ejercicio/jenkins_home/hudson.tasks.Ant.xml
+:000000 100644 0000000000000000000000000000000000000000 bdcd896b6874aac5d1d1e0f9801aa79db07723ce A	DockerImageSources/Ejercicio/jenkins_home/hudson.tasks.Maven.xml
+:000000 100644 0000000000000000000000000000000000000000 3b3159703eda52f7e94c53167b7f8d55f6822b8d A	DockerImageSources/Ejercicio/jenkins_home/jenkins.mvn.GlobalMavenConfig.xml
+:100644 100644 6073dc961122231f4d7cde18ca4423df3e3613d2 c6c5ff8115cc351db5ddfc29df8ea561e0633ea9 M	DockerImageSources/Ejercicio/jenkins_home/jobs/Liferay Example CI/config.xml
+:000000 100644 0000000000000000000000000000000000000000 c51695404b7d48e33523caed039ad44acc96f289 A	DockerImageSources/Ejercicio/jenkins_home/org.jenkinsci.plugins.docker.commons.tools.DockerTool.xml
+:000000 100644 0000000000000000000000000000000000000000 56eaf774ddc10400f819af445a6193597edd3ac7 A	DockerImageSources/Ejercicio/jenkins_home/org.jenkinsci.plugins.gitclient.JGitApacheTool.xml
+:000000 100644 0000000000000000000000000000000000000000 be9bb70c5c997635ec2a55f29fc46f8397783bb1 A	DockerImageSources/Ejercicio/jenkins_home/org.jenkinsci.plugins.gitclient.JGitTool.xml
+:100644 100644 0ea432f28b5e601ac18f569772b245503cf4fd4b bb01c5fc75dba39316498518706d6c70ea65abd7 M	DockerImageSources/Ejercicio/jenkins_home/users/admin/config.xml
+:000000 160000 0000000000000000000000000000000000000000 b137de2cc410e462b13e39dce7b9c9aac58fdbb0 A	DockerImageSources/Ejercicio/jenkins_home/workspace/Liferay Example CI
